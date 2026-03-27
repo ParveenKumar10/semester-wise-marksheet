@@ -1,24 +1,60 @@
 # 🎓 Semester-Wise Marksheet Management System
 
-A web-based application designed to manage and generate student marksheets semester-wise. Built using modern web technologies, this system enables efficient entry, processing, and visualization of academic records with automated calculations for totals, percentages, and grades.
+A web-based application designed to manage and generate student marksheets semester-wise. Built using modern web technologies, this system enables efficient entry, processing, and visualization of academic records with automated calculations for SGPA, CGPA, percentage, and grades.
 
 ---
 
 ## 📖 Overview
 
-The **Semester-Wise Marksheet Management System** is developed to simplify academic record management. It provides a structured and user-friendly interface for entering student data and computing results accurately. This project demonstrates the practical use of frontend technologies along with logical processing for real-world applications.
+The **Semester-Wise Marksheet Management System** is an interactive academic dashboard that helps students and institutions track performance across multiple semesters. It provides real-time calculations, visual analytics, and an intuitive interface for better understanding of academic progress.
 
 ---
 
-## 🚀 Features
+## 🚀 Key Features
 
-* Student information management
-* Subject-wise marks entry
-* Automatic total calculation
-* Percentage computation
-* Grade generation system
-* Semester-wise result organization
-* Clean and intuitive user interface
+### 🧾 Student Information Panel
+
+* Enter student name, roll number, course, college name, and academic year
+
+### 📊 Academic Calculations
+
+* SGPA calculation using credits and grade points
+* CGPA calculation across semesters
+* Automatic percentage conversion
+* Pass/Fail result detection
+
+### 📅 Semester-wise Summary Table
+
+* Displays all semesters (1–8)
+* Shows total credits, SGPA, CGPA, percentage, and result
+* Auto-updates when data is entered
+
+### 🧮 SGPA Calculator
+
+* Add subjects dynamically
+* Enter credits and grades
+* Calculates SGPA instantly
+* Updates semester table automatically
+
+### 📈 Academic Dashboard
+
+* Overall CGPA display
+* Overall percentage
+* Performance rating
+* Consistency index
+* Improvement tracking
+* Predicted next SGPA
+
+### 📉 Data Visualization
+
+* SGPA Trend (Line Chart)
+* Semester Comparison (Bar Chart)
+* Grade Distribution visualization
+
+### 📄 Additional Features
+
+* Print / Save as PDF option
+* Clean and responsive UI design
 
 ---
 
@@ -28,7 +64,7 @@ The **Semester-Wise Marksheet Management System** is developed to simplify acade
 | ---------- | ------------------------------- |
 | HTML       | Structure of the application    |
 | CSS        | Styling and layout design       |
-| JavaScript | Logic and interactivity         |
+| JavaScript | Logic, calculations & charts    |
 | Java       | Backend logic (optional module) |
 
 ---
@@ -76,35 +112,33 @@ java Main
 ## 🌐 Live Demo
 
 > Add your deployed project link here (GitHub Pages / Netlify)
-> Example: https://your-username.github.io/semester-wise-marksheet/
+> Example: [https://your-username.github.io/semester-wise-marksheet/](https://ParveenKumar10.github.io/semester-wise-marksheet/)
 
 ---
 
-## 🧪 Functionality
+## 🧪 How It Works
 
-The system performs the following operations:
-
-* Accepts student details and subject marks
-* Processes input data
-* Calculates total marks and percentage
-* Assigns grades based on performance
-* Displays structured semester-wise results
+1. Enter student details
+2. Add subjects, credits, and grades
+3. System calculates SGPA automatically
+4. CGPA and percentage are updated across semesters
+5. Dashboard visualizes academic performance
 
 ---
 
 ## 🎯 Objective
 
-To develop an efficient and user-friendly system that automates student marksheet generation and enhances accuracy in academic result processing.
+To design a smart academic tracking system that simplifies marksheet management and provides meaningful insights into student performance using automated calculations and visual analytics.
 
 ---
 
 ## 🔮 Future Enhancements
 
-* Integration with database systems (MySQL / Firebase)
-* User authentication and role management
-* Export results as PDF
-* Advanced analytics and performance graphs
-* Fully responsive design for mobile devices
+* Database integration (MySQL / Firebase)
+* User authentication system
+* Export marksheet as PDF
+* Cloud-based data storage
+* Mobile responsive design improvements
 
 ---
 
@@ -116,12 +150,6 @@ IILM University
 
 ---
 
-## 📄 License
+## ⭐ Support
 
-This project is developed for educational purposes and is open for learning and improvement.
-
----
-
-## ⭐ Acknowledgement
-
-If you find this project useful, consider giving it a ⭐ on GitHub.
+If you found this project useful, consider giving it a ⭐ on GitHub.
