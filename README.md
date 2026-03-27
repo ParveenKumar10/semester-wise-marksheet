@@ -111,7 +111,7 @@ java Main
 
 ## 🌐 Live Demo
 
-> https://ParveenKumar10.github.io/semester-wise-marksheet/
+> [https://ParveenKumar10.github.io/semester-wise-marksheet/](https://github.com/ParveenKumar10/semester-wise-marksheet)
 
 ---
 
