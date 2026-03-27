@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academic Progress Report</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div id="bg-layer"></div>
+
+  <main class="page">
+    <!-- Header / Student info -->
+    <header class="report-header">
+      <div>
+        <h1>Academic Progress Report</h1>
+        <p class="sub">4‑Year Engineering Programme – Semester‑wise Performance</p>
+      </div>
+      <div class="header-actions">
+        <button onclick="window.print()" class="btn-ghost-sm">Print / Save as PDF</button>
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">
+          <span class="icon-moon">🌙</span>
+          <span class="icon-sun">☀️</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Student information -->
+    <section class="card">
+      <h2>Student Information</h2>
+      <div class="info-grid">
+        <div class="info-item">
+          <label for="student-name">Name</label>
+          <input id="student-name" type="text" placeholder="e.g. Parveen Kumar" />
+        </div>
+        <div class="info-item">
+          <label for="roll-number">Roll Number</label>
+          <input id="roll-number" type="text" placeholder="e.g. 22CS1234" />
+        </div>
+        <div class="info-item">
+          <label for="course">Course</label>
+          <input id="course" type="text" value="B.Tech CSE" />
+        </div>
+        <div class="info-item">
+          <label for="college">College Name</label>
+          <input id="college" type="text" placeholder="Your College Name" />
+        </div>
+        <div class="info-item">
+          <label for="year">Academic Year</label>
+          <input id="year" type="text" placeholder="e.g. 2022–2026" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Formula reference -->
+    <section class="card">
+      <h2>Academic Formulas Used</h2>
+      <ul class="formula-list">
+        <li><strong>SGPA (Semester GPA)</strong> = Σ(Credit × Grade Point) ÷ Σ(Total Credits in that semester)</li>
+        <li><strong>CGPA</strong> = Σ(SGPA<sub>i</sub> × Credits<sub>i</sub>) ÷ Σ(Credits<sub>i</sub>)</li>
+        <li><strong>Percentage</strong> = CGPA × 9.5</li>
+        <li><strong>Result</strong>: Pass if SGPA ≥ 5 and no F grade; otherwise Fail</li>
+      </ul>
+    </section>
+
+    <!-- Semester table -->
+    <section class="card">
+      <div class="card-header">
+        <h2>Semester‑wise Academic Summary</h2>
+        <button id="add-sem-row" class="btn-ghost-sm">+ Add Semester</button>
+      </div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Semester</th>
+              <th>Total Credits</th>
+              <th>SGPA</th>
+              <th>CGPA</th>
+              <th>Percentage<br>(CGPA × 9.5)</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody id="semester-body">
+            <!-- Rows via JS -->
+          </tbody>
+        </table>
+      </div>
+      <p class="hint">
+        Enter Total Credits and SGPA for each semester. CGPA, Percentage, Result, and color‑coding are calculated automatically.
+      </p>
+    </section>
+
+    <!-- SGPA calculator -->
+    <section class="card">
+      <div class="card-header">
+        <h2>SGPA Calculator (Per Semester)</h2>
+        <span class="caption">Optional: verify SGPA using subjects, credits, and grades.</span>
+      </div>
+      <div class="sgpa-section">
+        <div class="sgpa-inputs">
+          <div class="info-item">
+            <label for="sgpa-sem-select">Semester</label>
+            <select id="sgpa-sem-select"></select>
+          </div>
+          <div id="sgpa-subjects" class="subject-list">
+            <!-- subject rows -->
+          </div>
+          <button id="add-subject" class="btn-ghost-sm">+ Add Subject</button>
+        </div>
+        <div class="sgpa-summary">
+          <p><strong>SGPA Formula</strong>: Σ(Credit × Grade Point) ÷ Σ(Total Credits)</p>
+          <p>Grade points (example): O=10, A+=9, A=8, B+=7, B=6, C=5, F=0</p>
+          <button id="calc-sgpa" class="btn-primary-sm">Calculate SGPA & Update Table</button>
+          <p id="sgpa-output" class="sgpa-output"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dashboard -->
+    <section class="card">
+      <h2>Academic Dashboard</h2>
+
+      <div class="summary-grid">
+        <div class="summary-item">
+          <span class="label">Overall CGPA</span>
+          <span class="value" id="summary-cgpa">0.00</span>
+        </div>
+        <div class="summary-item">
+          <span class="label">Overall Percentage</span>
+          <span class="value" id="summary-percentage">0.00%</span>
+        </div>
+        <div class="summary-item">
+          <span class="label">Performance Rating</span>
+          <span class="value" id="summary-rating">N/A</span>
+        </div>
+        <div class="summary-item">
+          <span class="label">Consistency Index (σ of SGPA)</span>
+          <span class="value" id="summary-consistency">N/A</span>
+        </div>
+        <div class="summary-item">
+          <span class="label">Improvement (Last − First SGPA)</span>
+          <span class="value" id="summary-improvement">0.00</span>
+        </div>
+        <div class="summary-item">
+          <span class="label">Predicted Next SGPA</span>
+          <span class="value" id="summary-next-sgpa">0.00</span>
+        </div>
+      </div>
+
+      <div class="chart-grid">
+        <div>
+          <h3>SGPA Trend (Line Chart)</h3>
+          <svg id="sgpa-line-chart" viewBox="0 0 100 40" preserveAspectRatio="none" class="chart">
+            <polyline id="sgpa-line" fill="none" stroke-width="1.6" stroke-linecap="round"></polyline>
+          </svg>
+          <div id="sgpa-line-axis" class="chart-axis"></div>
+        </div>
+        <div>
+          <h3>Semester Comparison (Bar Chart)</h3>
+          <svg id="sgpa-bar-chart" viewBox="0 0 100 40" preserveAspectRatio="none" class="chart">
+            <!-- bars -->
+          </svg>
+          <div id="sgpa-bar-axis" class="chart-axis"></div>
+        </div>
+      </div>
+
+      <div class="grade-dist-card">
+        <h3>Grade Distribution (All Subjects Entered)</h3>
+        <div id="grade-dist" class="grade-dist"></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
