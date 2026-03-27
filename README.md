@@ -111,8 +111,7 @@ java Main
 
 ## 🌐 Live Demo
 
-> Add your deployed project link here (GitHub Pages / Netlify)
-> Example: [https://your-username.github.io/semester-wise-marksheet/](https://ParveenKumar10.github.io/semester-wise-marksheet/)
+> https://ParveenKumar10.github.io/semester-wise-marksheet/
 
 ---
 
