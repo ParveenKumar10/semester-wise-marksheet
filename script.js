@@ -1,12 +1,13 @@
 // ===== Grade mapping (example 10-point scale) =====
 const GRADE_POINTS = {
-  O: 10,
-  "A+": 9,
-  A: 8,
-  "B+": 7,
-  B: 6,
-  C: 5,
-  F: 0
+  "A+":10, 
+  A:9, 
+  "B+":8, 
+  B:7, 
+  "C+":6, 
+  C:5, 
+  D:4,
+  F:0
 };
 
 // ===== State =====
