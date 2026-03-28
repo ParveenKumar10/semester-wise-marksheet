@@ -113,8 +113,10 @@ To design an efficient and intelligent academic management system that automates
 ## 👨‍💻 Author
 
 **Parveen Kumar**
+
 B.Tech Computer Science Engineering
-IILM University
+
+IILM University, Gurugram
 
 ---
 
