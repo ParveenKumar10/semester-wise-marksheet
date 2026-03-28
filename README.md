@@ -2,13 +2,10 @@
 
 A web-based academic management system designed to generate and manage student marksheets semester-wise. Built using modern web technologies, this application enables efficient data entry, automated calculations, and clear visualization of academic performance, including SGPA, CGPA, percentage, and grades.
 
----
 
 ## 📖 Overview
 
 The **Semester-Wise Marksheet Management System** is an interactive and user-friendly academic dashboard that simplifies student performance tracking across multiple semesters. It provides real-time calculations and structured insights, helping users analyze and monitor academic progress effectively.
-
----
 
 ## 🚀 Key Features
 
@@ -53,8 +50,6 @@ The **Semester-Wise Marksheet Management System** is an interactive and user-fri
 * Print and Save as PDF option
 * Clean, responsive, and user-friendly interface
 
----
-
 ## 🛠️ Tech Stack
 
 | Technology | Description                     |
@@ -63,8 +58,6 @@ The **Semester-Wise Marksheet Management System** is an interactive and user-fri
 | CSS        | Styling and layout              |
 | JavaScript | Logic, calculations, and charts |
 | Java       | Backend logic (optional module) |
-
----
 
 ## 📁 Project Structure
 
@@ -76,13 +69,10 @@ semester-wise-marksheet/
 │── README.md
 ```
 
----
-
 ## 🌐 Live Demo
 
 🔗 [https://github.com/ParveenKumar10/Semester-Wise-Marksheet-Management-System](https://parveenkumar10.github.io/Semester-Wise-Marksheet-Management-System/)
 
----
 
 ## 🧪 Working Process
 
@@ -92,13 +82,9 @@ semester-wise-marksheet/
 4. CGPA and percentage update across semesters
 5. Dashboard visualizes academic performance
 
----
-
 ## 🎯 Objective
 
 To design an efficient and intelligent academic management system that automates marksheet generation while providing meaningful insights into student performance through data visualization and real-time calculations.
-
----
 
 ## 🔮 Future Scope
 
@@ -107,8 +93,6 @@ To design an efficient and intelligent academic management system that automates
 * Export marksheets as downloadable PDF reports
 * Cloud-based storage for scalability
 * Enhanced mobile responsiveness
-
----
 
 ## 👨‍💻 Author
 
