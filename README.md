@@ -80,7 +80,7 @@ semester-wise-marksheet/
 
 ## 🌐 Live Demo
 
-🔗 https://github.com/ParveenKumar10/Semester-Wise-Marksheet-Management-System
+🔗 [https://github.com/ParveenKumar10/Semester-Wise-Marksheet-Management-System](https://parveenkumar10.github.io/Semester-Wise-Marksheet-Management-System/)
 
 ---
 
